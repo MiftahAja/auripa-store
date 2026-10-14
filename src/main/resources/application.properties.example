@@ -1,7 +1,10 @@
-spring.application.name=auripa
-spring.datasource.url=jdbc:postgresql://localhost:5432/nama_database_kamu
+# Server Port
+server.port=8080
+
+# PostgreSQL Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/nama_database
 spring.datasource.username=postgres
-spring.datasource.password=password_postgres_kamu
+spring.datasource.password=YOUR_PASSWORD_HERE
 spring.datasource.driver-class-name=org.postgresql.Driver
 
 # JPA / Hibernate Configuration
