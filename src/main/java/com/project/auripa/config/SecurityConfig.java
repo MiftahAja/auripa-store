@@ -11,6 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import com.project.auripa.entity.Product;
 import com.project.auripa.entity.User;
 import com.project.auripa.repository.UserRepository;
 import com.project.auripa.security.JwtAuthenticationFilter;

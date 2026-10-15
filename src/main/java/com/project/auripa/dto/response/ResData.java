@@ -1,31 +1,17 @@
 package com.project.auripa.dto.response;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data 
+@NoArgsConstructor 
+@AllArgsConstructor 
 public class ResData<T> {
 
     private String status;
     private String message;
     private T data;
-
-    // Constructors
-    public ResData() {
-    }
-
-    // Constructor for success responses
-    public ResData(String status, String message, T data) {
-        this.status = status;
-        this.message = message;
-        this.data = data;
-    }
-
-    // Getter and Setter
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
-
-    public String getMessage() { return message; }
-    public void setMessage(String message) { this.message = message; }
-
-    public T getData() { return data; }
-    public void setData(T data) { this.data = data; }
 
     // Static Methods
     public static <T> ResData<T> of(T data) {
